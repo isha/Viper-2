@@ -12,6 +12,8 @@
 		564B0C571AA53F560008141F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564B0C561AA53F560008141F /* Images.xcassets */; };
 		564B0C5A1AA53F570008141F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564B0C581AA53F570008141F /* Main.storyboard */; };
 		564B0C661AA53F570008141F /* Viper_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564B0C651AA53F570008141F /* Viper_2Tests.swift */; };
+		564B0C721AA558A50008141F /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 564B0C711AA558A50008141F /* GCDAsyncUdpSocket.m */; };
+		564B0C751AA91AAA0008141F /* InSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564B0C741AA91AAA0008141F /* InSocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,10 @@
 		564B0C5F1AA53F570008141F /* Viper 2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Viper 2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		564B0C641AA53F570008141F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		564B0C651AA53F570008141F /* Viper_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viper_2Tests.swift; sourceTree = "<group>"; };
+		564B0C701AA558A40008141F /* Viper 2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Viper 2-Bridging-Header.h"; sourceTree = "<group>"; };
+		564B0C711AA558A50008141F /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		564B0C731AA558DD0008141F /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		564B0C741AA91AAA0008141F /* InSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InSocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 				564B0C561AA53F560008141F /* Images.xcassets */,
 				564B0C581AA53F570008141F /* Main.storyboard */,
 				564B0C501AA53F560008141F /* Supporting Files */,
+				564B0C711AA558A50008141F /* GCDAsyncUdpSocket.m */,
+				564B0C701AA558A40008141F /* Viper 2-Bridging-Header.h */,
+				564B0C731AA558DD0008141F /* GCDAsyncUdpSocket.h */,
+				564B0C741AA91AAA0008141F /* InSocket.swift */,
 			);
 			path = "Viper 2";
 			sourceTree = "<group>";
@@ -209,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				564B0C551AA53F560008141F /* ViewController.swift in Sources */,
+				564B0C751AA91AAA0008141F /* InSocket.swift in Sources */,
+				564B0C721AA558A50008141F /* GCDAsyncUdpSocket.m in Sources */,
 				564B0C531AA53F560008141F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,10 +336,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Viper 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Viper 2/Viper 2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -335,10 +350,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Viper 2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Viper 2/Viper 2-Bridging-Header.h";
 			};
 			name = Release;
 		};
