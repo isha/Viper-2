@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		564305D41AB2396900232080 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564305D31AB2396900232080 /* SensorData.swift */; };
+		564305D81AB248F900232080 /* testQC.qtz in Resources */ = {isa = PBXBuildFile; fileRef = 564305DA1AB248F900232080 /* testQC.qtz */; };
 		564B0C531AA53F560008141F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564B0C521AA53F560008141F /* AppDelegate.swift */; };
 		564B0C551AA53F560008141F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564B0C541AA53F560008141F /* ViewController.swift */; };
 		564B0C571AA53F560008141F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564B0C561AA53F560008141F /* Images.xcassets */; };
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		564305D31AB2396900232080 /* SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		564305DB1AB2497A00232080 /* en */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; name = en; path = en.lproj/testQC.qtz; sourceTree = "<group>"; };
+		564305DC1AB2499000232080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; name = Base; path = Base.lproj/testQC.qtz; sourceTree = "<group>"; };
 		564B0C4D1AA53F560008141F /* Viper 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		564B0C511AA53F560008141F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		564B0C521AA53F560008141F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		564305D71AB247E100232080 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				564305DA1AB248F900232080 /* testQC.qtz */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		564B0C441AA53F560008141F = {
 			isa = PBXGroup;
 			children = (
+				564305D71AB247E100232080 /* Resources */,
 				564B0C4F1AA53F560008141F /* Viper 2 */,
 				564B0C621AA53F570008141F /* Viper 2Tests */,
 				564B0C4E1AA53F560008141F /* Products */,
@@ -90,6 +104,7 @@
 				564B0C701AA558A40008141F /* Viper 2-Bridging-Header.h */,
 				564B0C731AA558DD0008141F /* GCDAsyncUdpSocket.h */,
 				564B0C741AA91AAA0008141F /* InSocket.swift */,
+				564305D31AB2396900232080 /* SensorData.swift */,
 			);
 			path = "Viper 2";
 			sourceTree = "<group>";
@@ -201,6 +216,7 @@
 			files = (
 				564B0C571AA53F560008141F /* Images.xcassets in Resources */,
 				564B0C5A1AA53F570008141F /* Main.storyboard in Resources */,
+				564305D81AB248F900232080 /* testQC.qtz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +237,7 @@
 				564B0C551AA53F560008141F /* ViewController.swift in Sources */,
 				564B0C751AA91AAA0008141F /* InSocket.swift in Sources */,
 				564B0C721AA558A50008141F /* GCDAsyncUdpSocket.m in Sources */,
+				564305D41AB2396900232080 /* SensorData.swift in Sources */,
 				564B0C531AA53F560008141F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +261,16 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		564305DA1AB248F900232080 /* testQC.qtz */ = {
+			isa = PBXVariantGroup;
+			children = (
+				564305DB1AB2497A00232080 /* en */,
+				564305DC1AB2499000232080 /* Base */,
+			);
+			name = testQC.qtz;
+			path = ../../Downloads;
+			sourceTree = "<group>";
+		};
 		564B0C581AA53F570008141F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,6 +441,7 @@
 				564B0C6B1AA53F570008141F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		564B0C6C1AA53F570008141F /* Build configuration list for PBXNativeTarget "Viper 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +450,7 @@
 				564B0C6E1AA53F570008141F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

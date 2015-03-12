@@ -29,6 +29,6 @@ class InSocket: NSObject, GCDAsyncUdpSocketDelegate {
     }
     
     func udpSocket(sock: GCDAsyncUdpSocket!, didReceiveData data: NSData!, fromAddress address: NSData!,      withFilterContext filterContext: AnyObject!) {
-        println("incoming message: \(data)");
+        let s = SensorData(data: data)
     }
 }
